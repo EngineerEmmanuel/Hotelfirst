@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04f81a8e.css",
+    "main.js": "/static/js/main.05a90c6d.js",
+    "static/js/787.48a3adfe.chunk.js": "/static/js/787.48a3adfe.chunk.js",
+    "static/media/resort-main.mp4": "/static/media/resort-main.03f4f9d8985e771b5c44.mp4",
+    "static/media/resort (2).jpg": "/static/media/resort (2).6e62f111c12657ad742c.jpg",
+    "static/media/resort (3).jpg": "/static/media/resort (3).25590ee1c2a8acd3a996.jpg",
+    "static/media/seccity (1).jpg": "/static/media/seccity (1).25590ee1c2a8acd3a996.jpg",
+    "static/media/pbeach1.jpg": "/static/media/pbeach1.c5d84f3f7d40f2dbed75.jpg",
+    "static/media/resort (4).jpg": "/static/media/resort (4).c8ec7f44e6e1f8d1b538.jpg",
+    "static/media/resort2.mp4": "/static/media/resort2.42a0afa68b2a2c55cfb9.mp4",
+    "static/media/cities (1).jpg": "/static/media/cities (1).743504d8ca32f98e9f78.jpg",
+    "static/media/cities (2).jpg": "/static/media/cities (2).2613958eb3d26d40ebd4.jpg",
+    "static/media/resort (1).jpg": "/static/media/resort (1).2613958eb3d26d40ebd4.jpg",
+    "static/media/pbeach2.jpg": "/static/media/pbeach2.223186c6b214b4202ce8.jpg",
+    "static/media/hotel-hero1.jpg": "/static/media/hotel-hero1.1156aa2a2aee3da74cc0.jpg",
+    "static/media/2tra-re.png": "/static/media/2tra-re.146cd8134336052fd4c3.png",
+    "static/media/BG-Logo.png": "/static/media/BG-Logo.db45f8999d747c545704.png",
+    "static/media/mala-logo.png": "/static/media/mala-logo.797f1096ddc6ac809238.png",
+    "static/media/quatar.jpg": "/static/media/quatar.f14fd7c37710ee267e68.jpg",
+    "static/media/pbeach.jpg": "/static/media/pbeach.4477204c80b4dd7bd2a2.jpg",
+    "index.html": "/index.html",
+    "main.04f81a8e.css.map": "/static/css/main.04f81a8e.css.map",
+    "main.05a90c6d.js.map": "/static/js/main.05a90c6d.js.map",
+    "787.48a3adfe.chunk.js.map": "/static/js/787.48a3adfe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04f81a8e.css",
+    "static/js/main.05a90c6d.js"
+  ]
+}

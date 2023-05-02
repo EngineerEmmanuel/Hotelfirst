@@ -1,0 +1,90 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0  1.875rem;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.25);
+    width: 95%;
+    height: 5rem;
+    border-radius:13px ;
+    margin: 0 auto;
+    top: 0;
+     z-index: 9999;
+    
+ 
+    
+}
+.mobileMenu2{
+    display: none;
+}
+.mobileMenu2 i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.logo2{
+    cursor: pointer;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    
+
+}
+.nav-menu ul li{
+    font-weight: 600;
+    padding:0.7rem 1rem;
+}
+.nav-menu li:hover{
+    color: rgb(117, 114, 114);
+}
+.login button{
+    padding: 0.5rem 1rem;
+    background-color: #1C1DB3;
+    color: white;
+   
+}
+
+@media (max-width:850px) {
+   
+     .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: whitesmoke;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top:  0;
+        left: -100%;
+        opacity: 0;
+        padding: 80px 0 30px 0;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+        
+    }
+    .nav-menu.active{
+        left: 0;
+        opacity: 1;
+    
+    }
+    .nav-menu li{
+        padding-bottom: 1rem;
+    }
+    .nav-menu li:hover{
+        background-color: aqua;
+    }
+    .login button{
+        width: 15rem;
+    }
+    .mobileMenu2{
+        display: inline-block;
+        z-index: 999;
+    }
+}

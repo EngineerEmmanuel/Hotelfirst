@@ -1,0 +1,928 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+body{
+  background-color: whitesmoke;
+}
+:root{
+  --secondary-color: #1C1DB3 ;
+}
+:where(ul){
+  list-style-type: none;
+}
+:where(li){
+  /* display: inline-block; */
+  cursor: pointer;
+}
+:where(button){
+  cursor: pointer;
+  border-radius: 8px;
+  border:1px solid black;
+}
+.logo{
+  padding: 0 4rem;
+}
+
+
+nav{
+  background-color: whitesmoke;
+  display:  flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+/* nav ul{
+  display: flex;
+   padding: 0 4rem;
+} */
+.ul-btn ul li{
+  display: inline-block;
+  cursor: pointer;
+}
+
+.ul-btn{
+  display: flex;
+  padding: 0 4rem;
+ 
+}
+nav ul li{
+  margin-right: 2rem;
+}
+nav .ul-btn button{
+  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 2rem; */
+  vertical-align: super;
+}
+/* FOR THE MOBILE MENU */
+.mobile-menu{
+  background-color: red;
+  height:auto;
+  width:90%;
+  /* position:relative; */
+  position: fixed;
+  z-index:4;
+  margin-left: 4rem;
+  border-radius: 10px;
+  top: 0;
+  display: none;
+  
+  /* margin-top: 4rem; */
+}
+.mobile-subcon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.burger-icon i{
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.mobile-menu ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+.mobile-menu ul li{
+  border-bottom: 1px solid green;
+}
+/* HERO SECTION */
+.hero-section{
+  background: linear-gradient(to right, #ADE0B7, rgba(0,0,0,0.1) ),  url(hotel-hero1.jpg);
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  margin: 2rem 3rem;
+  border-radius: 10px;
+  border-color: whitesmoke;
+}
+.hero-text{
+  padding-top: 8rem;
+  /* padding-top: 12rem; */
+  margin-left: 5rem;
+  width: 36rem;
+ 
+}
+.hero-text h1{
+  font-size: 4rem;
+  padding-bottom: 0.5rem;
+}
+.hero-text h6{
+  font-size: 1rem;
+}
+.hero-text button{
+  padding: 0.5rem 2rem;
+  margin-top: 2rem;
+}
+/* FACILITY */
+.for-facility-center{
+  display: flex;
+  justify-content: center;
+}
+.facility-con{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 70rem;
+  background-color:whitesmoke;
+  gap: 6rem;
+  padding: 2rem 1rem 1rem 1rem;
+  border-radius: 5px;
+  box-shadow: 10px 0px 30px rgb(70, 69, 69);
+  
+  
+}
+.facility-wifi-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* wifi */
+.wifi-pros{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+}
+.wifi-pro1, .wifi-pro2, .wifi-pro3, .wifi-pro4{
+  padding: 0.5rem;
+  box-shadow: 10px 0px 50px rgb(192, 185, 185);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Hotels */
+.hotels{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.checkmark{
+  color: green;
+  padding-right: 0.5rem;
+}
+/* FOR THE SEARCH */
+.forsearch input{
+  outline: none;
+  padding: 1rem;
+  border: none;
+}
+#searchicon{
+  padding-left: 1rem;
+}
+/* FOR THE SEARCH */
+.result-img{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.result-img1, .result-img1 > img{
+  border-radius: 100px;
+}
+/* ENTIRE */
+.entire-con{
+  margin-top: 12rem;
+}
+.entire-con h2{
+  text-align: center;
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+}
+/* CITIES */
+.cities{
+  display: flex;
+  padding: 4rem 4rem;
+  gap: 3rem;
+  align-items: center;
+  background-color: #D8E5F5;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+  
+}
+.first-city-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem 2rem 1rem;
+}
+.first-city{
+  background-color:whitesmoke;
+  border-radius: 10px 10px 10px 10px;
+  width: 25rem;
+  box-shadow: 10px 0px 30px rgb(148, 147, 147);
+}
+.first-city-img, .first-city-img >img{
+  border-radius: 10px 10px 0 0;
+}
+.first-city-text >button{
+  padding:0.5rem 0.5rem;
+  width: 6rem;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color);
+}
+.money{
+  padding:1rem 0 0 1rem ;
+}
+/* RESORT SURPRISES */
+.surprises{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 0 7rem;
+  margin-top: 7rem;
+  gap: 3rem;
+}
+.resort-video-selection{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+.resort-video-sele-divs, .resort-video-sele-divs > img{
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.resort-video-sele-divs > img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.resort-icon-div {
+  border: 1px solid transparent;
+  padding: 0.9rem;
+  margin:0 1rem 1rem 0;
+  border-radius: 100px;
+  display: inline-block;
+}
+.resort-surprises h2{
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+}
+.resort-surprises p{
+  line-height: 1.5rem;
+}
+.resort-surprises ul{
+  padding-top: 2rem;
+}
+.resort-video-selection{
+  background-color: #D8E5F5;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+}
+.resort-videos, .resort-videos > video {
+  border-radius: 8px;
+}
+
+/* RELAXING */
+.relaxing-con{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 0  7rem;
+  margin-top: 15rem;
+}
+.relaxing-img-con{
+  display: flex;
+  gap: 2rem;
+}
+.relax-img{
+  height: 20rem;
+  width: 10rem;
+  background-size: cover;
+  background-position: center;
+  object-fit:contain;
+  border-radius: 8px;
+}
+#relax1{
+  background-image: url(pbeach.jpg);
+}
+#relax2{
+  background-image: url(pbeach1.jpg);
+  transform: translateY(-80px);
+  box-shadow: 10px 0px 30px rgb(148, 147, 147);
+}
+#relax3{
+  background-image: url(pbeach2.jpg);
+}
+.relaxing-text-con h2{
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+}
+.relaxing-text-con p{
+  line-height: 1.5rem;
+}
+.relaxing-text-con button{
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+}
+
+/* AIRLINES */
+.air-con{
+  background-color: #DCEAED;
+  margin-top: 6rem;
+  padding: 2rem;
+}
+.air-subcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin: 2rem 6rem;
+}
+.air-subcon >img{
+  transform: translateY(-30px);
+  z-index: 3;
+}
+.air-uls{
+  display: flex;
+  gap: 6rem;
+}
+.first-ul>h2{
+  display: block;
+}
+.first-ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sec-ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.air-logo{
+  display: inline-block;
+  align-items: center;
+  vertical-align: sub;
+  padding-right: 0.5rem;
+}
+
+/* GET */
+.get-con{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+.get-subcon form input{
+  padding: 0.8rem 0;
+  width: 20rem;
+  text-align: center;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.get-subcon form input:hover{
+  outline: none;
+}
+.get-subcon form button{
+  padding: 0.8rem 2rem;
+  margin-left: 0.5rem;
+  color: white;
+  background-color: #1C1DB3;
+  border: none;
+}
+.get-subcon h2{
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+}
+.get-subcon p{
+  padding-bottom:0.5rem ;
+}
+/* FOOTER */
+footer{
+  display:flex;
+  justify-content: center;
+  margin-top: 6rem;
+  padding-bottom: 2rem;
+}
+.footer-con{
+  display: flex;
+  justify-content: space-between;
+  gap: 14rem;
+  align-items: center;
+
+}
+/* SOCIAL LINKS */
+.social{
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.links ul, .support ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.links h4, .support h4, .footer-logo h4{
+  padding-bottom: 2rem;
+  
+}
+.footer-logo p{
+  line-height: 1.5rem;
+}
+@media (max-width:1309px) {
+  .cities{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    row-gap: 3rem;
+  }
+  .first-city-img > img{
+    width: 100%;
+  }
+  .hero-text{
+    padding-top: 4.5rem;
+  }
+  .relaxing-con{
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
+    gap: 4rem;
+  }
+}
+@media (max-width:1272px) {
+  .cities{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    row-gap: 3rem;
+  }
+  /* .first-city-img >{
+    width: 600px;
+  } */
+  .first-city{
+    background-color:whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+    width: 28.3rem;
+    box-shadow: 10px 0px 30px rgb(148, 147, 147);
+  }
+  .facility-con{
+    margin-top: 3rem;
+    width: 50rem;
+    position: static;
+  }
+ 
+  .relaxing-con{
+    gap: 4rem;
+  }
+  .air-uls{
+    display: flex;
+    gap: 2rem;
+  }
+  .entire-con{
+    margin-top: 8rem;
+  }
+  .resort-video-selection{
+    padding:1rem 1rem 0 1rem;
+    
+  }
+  .resort-videos{
+    height: 10rem;
+  }
+  
+  
+}
+@media (max-width:1224px) {
+  .air-uls{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .first-ul h2{
+    text-align: center;
+  }
+  .first-ul{
+    padding-left: 1rem;
+  }
+}
+@media (max-width:1172px) {
+  .relaxing-text-con p, .resort-surprises p{
+    line-height: 2rem;
+  }
+  .relaxing-con{
+    gap: 5rem;
+  }
+  .surprises{
+    margin-left: 2rem;
+    margin-right: 2rem;
+   
+  }
+  .relaxing-con{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media (max-width:1154px) {
+  .hero-text{
+    margin-left: 2rem;
+  }
+  .air-subcon{
+    margin: 2rem 2rem;
+  }
+}
+@media (max-width:1002px) {
+  .first-city{
+    background-color:whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+    width: 25rem;
+    box-shadow: 10px 0px 30px rgb(148, 147, 147);
+  }
+  .first-city-img > img{
+    width: 25rem;
+  }
+  .cities{
+    padding: 4rem 1rem;
+  }
+  .air-subcon{
+    margin: 2rem 0rem;
+  }
+  .air-uls{
+    gap: 4rem;
+  }
+}
+@media (max-width:1028px) {
+  .air-subcon{
+    margin: 2rem 0rem;
+  }
+  .air-uls{
+    gap: 4rem;
+  }
+  .footer-con{
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+    align-items: center;
+  
+  }
+  nav ul {
+    display: none;
+  }
+  .burger-icon i, .mobile-menu{
+    display: inline-block;
+  }
+ 
+}
+@media (max-width:958px) {
+  .surprises{
+    grid-template-columns: 1fr;
+  }
+  .relaxing-con{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-top: 35rem;
+  }
+  .relaxing-img-con{
+    margin-top: 5rem;
+    place-self: center;
+    gap: 6rem;
+  }
+  .relax-img{
+    height: 23rem;
+    width: 13rem;
+   
+  }
+  .air-uls{
+    display: flex;
+    gap: 3rem;
+  }
+}
+
+@media (max-width:998px) {
+  .air-subcon{
+    display:grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding-top: 2rem;
+    gap: 4rem;
+   
+  }
+ 
+}
+@media (max-width:856px) {
+  .footer-con{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 0 3rem;
+  
+  }
+  .first-city{
+    width: 24.3rem;
+  }
+  .first-city-img > img{
+    width: 24.375rem;
+  }
+}
+@media (max-width:818px) {
+  .first-city{
+    width: 20.3rem;
+  }
+  .first-city-img > img{
+    width: 20.375rem;
+  }
+  .facility-con{
+    margin-top: 3rem;
+    width: 40rem;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .relaxing-img-con{
+    gap: 2rem;
+  }
+   
+}
+@media (max-width:694px) {
+  .cities{
+    grid-template-columns: 1fr;
+  }
+  .first-city{
+    width:100%;
+  }
+  .first-city-img > img{
+    width:100%;
+  }
+  .hero-text{
+    padding-top: 8rem;
+    margin-left: 3rem;
+    width: auto;
+  }
+  .hero-section{
+  margin: 2rem 1rem;
+ 
+}
+  .facility-con{
+    width: 32rem;
+    
+  }
+  .relax-img{
+    height: 20rem;
+    width: 10rem;
+  }
+  .hero-section{
+    margin: 2rem 2rem;
+   
+  }
+}
+@media (max-width:643px) {
+  .hero-text{
+    padding-top: 3rem;
+  }
+}
+@media (max-width:540px) {
+  .facility-con{
+    width: 28rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+  .hotels{
+    place-self: center;
+  }
+  .forsearch >input{
+    width: 80%;
+  }
+  .footer-con{
+    column-gap: 3rem;
+  
+  }
+}
+@media (max-width:580px) {
+  .resort-video-display > video{
+    width:90%;
+  }
+
+  .resort-video-sele-divs >img{
+    width: 80px;
+  }
+  .resort-video-selection{
+    width: 28.5rem;
+  }
+  .relaxing-img-con{
+    gap: 1rem;
+  }
+  .relax-img{
+    height: 23rem;
+    width: 8rem;
+   
+  }
+  
+}
+@media (max-width:520px) {
+  .resort-video-selection{
+    width: 26.5rem;
+    
+  }
+  .hero-text{
+    padding-top: 12rem;
+    margin-left: 3rem;
+    width: 36rem;
+  }
+  .hero-section{
+    margin: 2rem 1rem;
+   
+  }
+}
+@media (max-width:525px) {
+  .hero-text{
+    padding-top: 5rem;
+    margin-left: 2rem;
+  }
+  .hero-section{
+    margin: 2rem 1rem;
+   
+  }
+}
+@media (max-width:529px) {
+  .hero-text{
+    padding-top: 4rem;
+    margin-left: 2rem;
+  }
+}
+@media (max-width:519px) {
+  .hero-text{
+    padding-top: 4rem;
+    margin-left: 2rem;
+    width: 25rem;
+  }
+  .hero-section{
+    margin: 2rem 1rem;
+   
+  }
+}
+@media (max-width:503px) {
+  .get-subcon form input{
+    width: 15rem;
+  }
+  .footer-con{
+    grid-template-columns: 1fr;
+  }
+  .resort-video-selection{
+    width: 24.4rem;
+    gap: 1rem;
+    
+  }
+  .air-subcon{
+    margin: 0;
+    width: auto;
+  }
+  .relaxing-con{
+    margin-top: 16rem;
+  }
+  .hero-text{
+    padding-top: 2rem;
+    margin-left: 1rem;
+    /* width: 25rem; */
+    width: auto;
+  }
+ 
+}
+
+@media (max-width:455px) {
+  .hero-text{
+    padding-top: 2rem;
+    margin-left: 1rem;
+    /* width: 25rem; */
+    width: auto;
+  }
+  .hero-section{
+    margin: 2rem 1rem;
+   
+  }
+}
+@media (max-width:456px) {
+  #tra{
+    width: 25rem;
+  }
+
+  .air-subcon{
+    margin-left:0 ;
+    margin-right:0 ;
+  }
+  .air-uls{
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .facility-con{
+    width: 21rem;
+    
+  }
+}
+
+@media (max-width:400px) {
+    #tra{
+      width: 18.75rem;
+    }
+}
+@media (max-width:426px) {
+  .air-uls{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+  .hero-text{
+    padding-top: 2rem;
+    margin-left: 1rem;
+    /* width: 25rem; */
+    width: auto;
+  }
+  .hero-section{
+    margin: 2rem 1rem;
+   
+  }
+  .relax-img{
+    height: 20rem;
+    width: 7rem;
+  }
+}
+
+
+
+
+
+
+@media (max-width:405px) {
+  .hero-text{
+    padding-top: 5rem;
+    margin-left: 1rem;
+    width: 18rem;
+  }
+  .hero-text h1{
+    font-size: 3.5rem;
+  }
+}
+@media (max-width:386px) {
+  .get-subcon form button{
+    width: 7rem;
+    padding: 0;
+    padding: 0.8rem 0rem;
+    
+  }
+  .hero-text{
+    padding-top: 5rem;
+    margin-left: 1rem;
+    width: 21rem;
+  }
+  .hero-section{
+    margin: 2rem 1rem;
+   
+  }
+
+  .get-subcon form input{
+    width: 12rem;
+    
+  }
+}
+
+@media (max-width:353px) {
+  .hero-text{
+    /* padding-top: 5rem;
+    margin-left: 1rem; */
+    width: auto;
+  }
+}
+@media (max-width:339px) {
+  h2{
+    text-align: center;
+    line-height: 3.5rem;
+  }
+}
+@media (max-width:329px) {
+  .hero-text{
+    padding-top: 2rem;
+    margin-left: 1rem;
+    width: auto;
+  }
+  .hero-text h1{
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+@media (max-width:320px) {
+  .hero-section{
+    margin: 2rem 0.5rem;
+   
+  }
+  .hero-text{
+    padding-top: 2rem;
+    margin-left: 1rem;
+    width: auto;
+  }
+  .hero-text h1{
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .facility-con{
+    width: 18rem;
+  }
+  .relaxing-img-con{
+    gap: 0.5rem;
+  }
+  .relax-img{
+    width: 6rem;
+  }
+}
